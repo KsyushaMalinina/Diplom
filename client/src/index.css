@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F3F9FB;
+    color: #1e1b1b;
+    /*font-weight: 300;*/
+}
+
+.wrapper {
+    width: 1280px;
+    margin: 50px auto;
+}
+
+
+main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.colors {
+    color: #8294C4;
+}
+
+.colors:hover {
+    color: #ACB1D6;
+}
+
+.colors:active {
+    color: #DBDFEA;
+}
+
+.colors:focus {
+    color: #FFEAD2;
+}
+
+.custom-heading {
+    font-size: 24px;
+    color: rgba(4, 17, 103, 0.32);
+    /* Дополнительные стили */
+}
+
+.custom-active {
+    background-color: #8294C4;
+}
