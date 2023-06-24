@@ -28,12 +28,7 @@ const ProductItem = ({product}) => {
                 <Image width={150} height={150} src={process.env.REACT_APP_API_URL + product.img}/><br/>
                 <div style={{width: '90%', margin: '0 auto', textalign: 'center'}}>{product.name}<br/>
                     Цена: {product.price} руб.
-                    {/*Осталось:{product.amount}
-                    */}
                     <br />
-                    {/*{user.isAuth && (*/}
-                    {/*    <FaShoppingCart className="cart-icon" onClick={handleAddToBasket} />*/}
-                    {/*)}*/}
                 </div>
             </Card>
             :
