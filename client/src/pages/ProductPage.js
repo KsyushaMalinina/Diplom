@@ -25,10 +25,6 @@ const ProductPage = observer(() => {
 
     const [value, setValue] = useState('')
 
-    // const Amount = () => {
-    //     updateAmount(id, value).then(response => alert(`Количество товаров обновлено`))
-    // }
-    // // ------- Создаём функцию для записи ------- //
 
     const add = () => {
         if (!selectedSize) {
