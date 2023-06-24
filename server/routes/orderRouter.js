@@ -7,7 +7,7 @@ const checkRole = require("../middleware/checkRoleMiddleware");
 router.post('/', orderController.addOrder)
 router.get('/', checkRole('MANAGER'), orderController.getAll)
 router.get('/user/:id',  orderController.getUserOrder)
-router.post('/user/update/:id', checkRole('MANAGER'), orderController.updateUserOrder)
+router.put('/user/update/:id', checkRole('MANAGER'), orderController.updateUserOrder)
 router.get('/:id', orderController.getUserOrderList)
 
 
