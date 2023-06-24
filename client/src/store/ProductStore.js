@@ -83,10 +83,7 @@ export default class ProductStore{
     get acceptedProducts() {
         return this._products.filter(product => product.accepted);
     }
-    // get selectedProduct() {
-    //
-    //     return this._selectedProduct
-    // }
+
 
     get page() {
         return this._page
