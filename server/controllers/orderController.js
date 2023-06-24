@@ -53,7 +53,6 @@ class OrderController {
     async getUserOrder(req,res){
         const {id} = req.params
         const date = await Order.findAll({where: {userId: id}} )
-        // delete the dot and everything after
         return res.json(date)
     }
     async getUserOrderList(req,res){
