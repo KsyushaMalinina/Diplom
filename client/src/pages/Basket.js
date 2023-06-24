@@ -31,7 +31,6 @@ const Basket = observer(() => {
 
     }
 
-    // ----- Считаем общую сумму, которую юзер набрал в корзину ------- //
 
     let prices = 0;
     {product.basket.map(price =>
