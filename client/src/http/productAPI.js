@@ -28,10 +28,7 @@ export const delProduct = async (id) => {
     return data
 }
 
-// export const setDescription = async (_id, text) => {
-//     const {data} = await $authHost.post('api/product/update', _id, text)
-//     return data
-// }
+
 export const fetchProducts = async (typeId, page, limit = 5) => {
     const {data} = await $host.get('api/product', {params: {
         typeId, page, limit
@@ -57,8 +54,6 @@ export const fetchSimilarProducts = async (productId) => {
 }
 
 
-
-// ------ Добавляю подключение для добавление crud с корзиной ------- //
 
 export const addToBasket = async (formData) => {
     const {response} = await $authHost.post('api/basket', formData)
