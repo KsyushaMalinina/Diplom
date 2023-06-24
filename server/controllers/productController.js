@@ -48,18 +48,6 @@ class ProductController {
 
     }
 
-    // async setDescription(req, res, next) {
-    //     try {
-    //         let {_id,text} = req.body
-    //         const product = await Product.update(
-    //             {_info: text},
-    //             {where: {id: _id}}
-    //         );
-    //         return res.json(product)
-    //     } catch (e) {
-    //         next(ApiError.badRequest(e.message))
-    //     }
-    // }
 
     async getSimilarProducts(req, res) {
         try {
